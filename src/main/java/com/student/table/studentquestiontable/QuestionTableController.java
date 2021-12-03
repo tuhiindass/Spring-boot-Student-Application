@@ -30,7 +30,7 @@ public class QuestionTableController {
 	@Autowired
 	private ScoreRepository scoRepo;
 
-	@PostMapping("/profile")
+	@PostMapping("https://git.heroku.com/springboot-application-deploy.git")
 	public void postProfile(@RequestBody Profile profile) {
 		List<QuestionOptions> quOp = queOpRepo.getQuestionOption();
 		for (Session p : profile.getSession()) {
